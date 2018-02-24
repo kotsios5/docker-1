@@ -6,10 +6,4 @@ RUN sudo chmod 755 /var/www/*
 RUN sudo chown -R www-data:www-data /var/www/html*
 RUN sudo chown -R www-data:www-data /var/www/*
 
-RUN ls /var/www/
-
-RUN sh /var/www/build/install/install-yclas.sh
-
-
-
-RUN sudo chmod -R 777 /var/www/oc/tests
+RUN sudo git clone https://github.com/kotsios5/build-travis-ci build
