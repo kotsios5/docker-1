@@ -7,5 +7,3 @@ RUN sudo chown -R www-data:www-data /var/www/html*
 RUN sudo chown -R www-data:www-data /var/www/*
 
 RUN git clone https://github.com/kotsios5/build-travis-ci /build
-
-RUN find /var/lib/mysql -type f -exec touch {} \; && service mysql start
