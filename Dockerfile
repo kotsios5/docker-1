@@ -1,4 +1,4 @@
-FROM kotsios/env:latest
+FROM kotsios/yclas_php71:latest
 MAINTAINER kotsios 
 
 RUN sudo chmod 755 /var/www/html/*
